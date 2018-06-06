@@ -20,11 +20,11 @@ public class Joke {
                         "Teacher: 'Well done. Now class, who found America?'\n" +
                         "Class: 'Clara did.'";
             case 3:
-                return "The teacher says: “I wish you’d pay a little attention, Victoria.”\n" +
-                        "“I am paying as little as I can Mrs. Sanders,” said Victoria.";
+                return "The teacher says: 'I wish you'd pay a little attention, Victoria.'\n" +
+                        "'I am paying as little as I can Mrs. Sanders,' said Victoria.";
             case 4:
                 return "What is the longest word in the English language?\n" +
-                        "“Smiles”.\n" +
+                        "'Smiles'.\n" +
                         "Because there is a mile between its first and last letters!";
             case 5:
                 return "Where do zombies go swimming?\n" +

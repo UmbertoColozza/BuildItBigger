@@ -45,10 +45,6 @@ public class MainActivity extends AppCompatActivity implements JokeEndpointsAsyn
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view) {
-        AsyncTask<Context, Void, String> execute = new JokeEndpointsAsyncTask().execute(this);
-    }
-
 
     @Override
     public void onDownloadJokeTaskCompleted(String joke) {
