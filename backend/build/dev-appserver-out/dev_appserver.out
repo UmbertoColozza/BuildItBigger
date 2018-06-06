@@ -1,0 +1,23 @@
+Warning: Google App Engine Java 7 runtime is deprecated.
+Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
+giu 06, 2018 11:16:10 AM java.util.prefs.WindowsPreferences <init>
+AVVERTENZA: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+giu 06, 2018 11:16:10 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFORMAZIONI: Overwriting system property key 'java.util.logging.config.file', value 'D:\Programmi\Google\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'E:\udacity1\gradle\ud867-master\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+giu 06, 2018 11:16:10 AM com.google.apphosting.utils.jetty.JettyLogger info
+INFORMAZIONI: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
+giu 06, 2018 9:16:10 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+AVVERTENZA: Your working directory, (E:\udacity1\gradle\ud867-master\FinalProject\backend) is not equal to your 
+web application root (E:\udacity1\gradle\ud867-master\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+giu 06, 2018 9:16:10 AM com.google.apphosting.utils.jetty.JettyLogger info
+INFORMAZIONI: jetty-6.1.x
+giu 06, 2018 9:16:11 AM com.google.apphosting.utils.jetty.JettyLogger info
+INFORMAZIONI: Started SelectChannelConnector@localhost:8080
+giu 06, 2018 9:16:11 AM com.google.appengine.tools.development.AbstractModule startup
+INFORMAZIONI: Module instance default is running at http://localhost:8080/
+giu 06, 2018 9:16:11 AM com.google.appengine.tools.development.AbstractModule startup
+INFORMAZIONI: The admin console is running at http://localhost:8080/_ah/admin
+giu 06, 2018 11:16:11 AM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFORMAZIONI: Dev App Server is now running
