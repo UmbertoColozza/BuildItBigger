@@ -13,7 +13,7 @@ import com.example.umberto.javajoke.Joke;
 import com.umberto.androidjoke.JokeActivity;
 
 
-public class MainActivity extends AppCompatActivity implements JokeEndpointsAsyncTask.OnTaskCompleted {
+public class MainActivity extends AppCompatActivity {
     private static final String JOKE_KEY="joke_key";
 
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements JokeEndpointsAsyn
     }
 
 
-    @Override
+    /*@Override
     public void onDownloadJokeTaskCompleted(String joke) {
         Bundle extra=new Bundle();
         extra.putString(JOKE_KEY, joke);
@@ -54,5 +54,5 @@ public class MainActivity extends AppCompatActivity implements JokeEndpointsAsyn
         intent.putExtras(extra);
 
         startActivity(intent);
-    }
+    }*/
 }

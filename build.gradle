@@ -20,3 +20,9 @@ allprojects {
         google()
     }
 }
+
+task runTests(dependsOn: [':backend:appengineRun',':app:connectedCheck']) {
+    tasks.getByPath(':app:connectedCheck').mustRunAfter ':backend:appengineRun'
+
+}
+runTests.finalizedBy ":backend:appengineStop"
