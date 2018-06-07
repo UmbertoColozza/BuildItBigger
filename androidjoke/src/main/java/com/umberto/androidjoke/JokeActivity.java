@@ -1,15 +1,10 @@
 package com.umberto.androidjoke;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
-
-import com.example.umberto.androidjoke.R;
 
 public class JokeActivity extends AppCompatActivity {
     private static final String JOKE_KEY="joke_key";

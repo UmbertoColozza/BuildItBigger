@@ -1,4 +1,4 @@
-package com.example.umberto.javajoke;
+package com.umberto.javajoke;
 
 import java.util.Random;
 

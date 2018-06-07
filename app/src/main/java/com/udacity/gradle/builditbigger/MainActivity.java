@@ -1,17 +1,9 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
-import com.example.umberto.javajoke.Joke;
-import com.umberto.androidjoke.JokeActivity;
-
 
 public class MainActivity extends AppCompatActivity {
     private static final String JOKE_KEY="joke_key";
@@ -44,15 +36,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-    /*@Override
-    public void onDownloadJokeTaskCompleted(String joke) {
-        Bundle extra=new Bundle();
-        extra.putString(JOKE_KEY, joke);
-        Intent intent=new Intent(this,JokeActivity.class);
-        intent.putExtras(extra);
-
-        startActivity(intent);
-    }*/
 }

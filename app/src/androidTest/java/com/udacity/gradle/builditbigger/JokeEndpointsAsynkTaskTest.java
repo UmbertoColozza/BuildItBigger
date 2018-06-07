@@ -4,8 +4,6 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
-import android.test.RenamingDelegatingContext;
-import android.util.Log;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -21,7 +19,6 @@ import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNotNull;
 
@@ -36,7 +33,6 @@ public class JokeEndpointsAsynkTaskTest {
         //Get context
         mContext = InstrumentationRegistry.getContext();
         assertNotNull(mContext);
-        Log.d("Test","Context "+(mContext!=null));
     }
 
     @Test
@@ -68,7 +64,6 @@ public class JokeEndpointsAsynkTaskTest {
                 try {
                     return myApiService.getJoke().execute().getData();
                 } catch (IOException e) {
-                    Log.e("Test","Error "+e.toString());
                     e.printStackTrace();
                     return null;
                 }
@@ -93,8 +88,7 @@ public class JokeEndpointsAsynkTaskTest {
         /* The testing thread will wait here until the UI thread releases it
          * or 30 seconds passes.
          */
-        signal.await(60, TimeUnit.SECONDS);
-        Log.d("Test","result "+result);
+        signal.await(30, TimeUnit.SECONDS);
         assertNotNull(result);
         assertFalse(result.isEmpty());
     }

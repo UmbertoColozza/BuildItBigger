@@ -1,11 +1,9 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +46,6 @@ public class MainActivityFragment extends Fragment implements JokeEndpointsAsync
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
                     showJoke();
                 }
             }
@@ -75,7 +72,6 @@ public class MainActivityFragment extends Fragment implements JokeEndpointsAsync
 
         //set mInterstitialAd if is null
         if(mInterstitialAd==null) {
-            Log.d("TAG", "create mInterstitialAd");
             mInterstitialAd = new InterstitialAd(getContext());
             mInterstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
             mInterstitialAd.setAdListener(new AdListener(){

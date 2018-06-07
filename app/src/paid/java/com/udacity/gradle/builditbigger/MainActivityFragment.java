@@ -10,18 +10,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.umberto.androidjoke.JokeActivity;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
-/**
- * A placeholder fragment containing a simple view.
- */
 public class MainActivityFragment extends Fragment implements JokeEndpointsAsyncTask.OnTaskCompleted {
     private static final String JOKE_KEY="joke_key";
     @BindView(R.id.tel_joke_button) Button btnTellJoke;
